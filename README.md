@@ -15,5 +15,5 @@ Read Later
 Comments
 ![Project Preview](./website/media/preview/comment.png)
 
-Admiin
+Admin
 ![Project Preview](./website/media/preview/admin.png)
