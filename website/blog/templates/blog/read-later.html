@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Read Later{% endblock  %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'blog/read-later.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
+{% endblock  %}
+{% block content %}
+<section id="stored-posts">
+        <h2 style="text-align: center">Read Later</h2>
+        {% if has_post is False %}
+            <p>
+                No post
+            </p>
+        {% endif %}
+        <ul>
+            {% for post in posts %}
+                {% include 'blog/includes/post.html' %}
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock  %}
